@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Teamone\\TeamoneWpDbOrm\\' => array($baseDir . '/src'),
+    'Teamone\\TeamoneWpDbOrmTest\\' => array($baseDir . '/test'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

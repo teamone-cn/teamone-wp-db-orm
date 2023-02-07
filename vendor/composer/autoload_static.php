@@ -15,6 +15,7 @@ class ComposerStaticInit14907711736b73c7c55800a76443fb72
         'T' => 
         array (
             'Teamone\\TeamoneWpDbOrm\\' => 23,
+            'Teamone\\TeamoneWpDbOrmTest\\' => 27,
         ),
         'D' => 
         array (
@@ -27,6 +28,10 @@ class ComposerStaticInit14907711736b73c7c55800a76443fb72
         'Teamone\\TeamoneWpDbOrm\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Teamone\\TeamoneWpDbOrmTest\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/test',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

@@ -263,7 +263,7 @@ trait ConnectTrait
 ```php
 use PHPUnit\Framework\TestCase;
 
-class SimpleTest extends TestCase
+class TeamoneWpDbOrmBaseTest extends TestCase
 {
     use ConnectTrait;
 
@@ -280,7 +280,7 @@ class SimpleTest extends TestCase
 执行测试：
 
 ```sh
-$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter SimpleTest::test1
+$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter TeamoneWpDbOrmBaseTest::test1
 ```
 
 ## 单元测试
@@ -294,19 +294,19 @@ $ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit
 2. 执行指定文件
 
 ```sh
-$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml --test-suffix SimpleTest.php ./test/Unit
+$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml --test-suffix TeamoneWpDbOrmBaseTest.php ./test/Unit
 ```
 
-3. 执行 SimpleTest 用例
+3. 执行 TeamoneWpDbOrmBaseTest 用例
 
 ```sh
-$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter SimpleTest
+$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter TeamoneWpDbOrmBaseTest
 ```
 
-4. 执行 SimpleTest::test1 用例
+4. 执行 TeamoneWpDbOrmBaseTest::test1 用例
 
 ```sh
-$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter SimpleTest::test01
+$ ./vendor/phpunit/phpunit/phpunit --configuration phpunit.xml ./test/Unit --filter TeamoneWpDbOrmBaseTest::test01
 ```
 
 ## 数据库连接
