@@ -1,0 +1,23 @@
+{
+    "name": "teamone/teamone-wp-db-orm",
+    "description": "Teamone WordPress Database ORM",
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Teamone\\TeamoneWpDbOrm\\": "src/",
+            "Teamone\\TeamoneWpDbOrmTest\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "shijie.zhu",
+            "email": "kitgor.architect@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "phpstan/phpstan": "^1.9"
+    }
+}
