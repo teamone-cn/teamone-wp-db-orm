@@ -150,14 +150,14 @@ $config = [
             // 只读
             'read'      => [
                 'host' => [
-                    'mysql.kit.com',
-                    'mysql.kit.com',
+                    'localhost',
+                    'localhost',
                 ],
             ],
             // 读写
             'write'     => [
                 'host' => [
-                    'mysql.kit.com',
+                    'localhost',
                 ],
             ],
             // 连接驱动
@@ -333,7 +333,7 @@ $users = $db->table('users')->get();
 2. 数据库连接，提供匿名实现类
 
 ```php
- $clazz = new class() implements DatabaseConfigContract{
+$clazz = new class() implements DatabaseConfigContract{
     /**
      * @desc 数据库连接配置
      * @return array
@@ -341,43 +341,57 @@ $users = $db->table('users')->get();
     public function getConnectionConfig()
     {
         $config = [
+            // 默认配置，表示选择 connections 数组，key 为 ali-rds 的配置作为默认数据库配置
             'default'     => 'ali-rds',
+            // 连接组
             'connections' => [
+                // 连接 ali-rds
                 'ali-rds'     => [
+                    // 连接名
                     'name'      => 'ali-rds',
+                    // 只读
                     'read'      => [
                         'host' => [
-                            'mysql.kit.com',
-                            'mysql.kit.com',
+                            'localhost',
+                            'localhost',
                         ],
                     ],
                     // 读写
                     'write'     => [
                         'host' => [
-                            'mysql.kit.com',
+                            'localhost',
                         ],
                     ],
+                    // 驱动名，目前仅支持 mysql
                     'driver'    => 'mysql',
+                    // 数据库连接端口
                     'port'      => 3306,
+                    // 数据库
                     'database'  => 'blog',
+                    // 数据库用户
                     'username'  => 'root',
+                    // 数据库密码
                     'password'  => '123456',
+                    // 字符集
                     'charset'   => 'utf8',
+                    // 字符排序
                     'collation' => 'utf8_unicode_ci',
+                    // 表前缀
                     'prefix'    => 'th_',
                 ],
+                // 连接 tencent-rds
                 'tencent-rds' => [
                     'name'      => 'tencent-rds',
                     'read'      => [
                         'host' => [
-                            'mysql.kit.com',
-                            'mysql.kit.com',
+                            'localhost',
+                            'localhost',
                         ],
                     ],
                     // 读写
                     'write'     => [
                         'host' => [
-                            'mysql.kit.com',
+                            'localhost',
                         ],
                     ],
                     'driver'    => 'mysql',
