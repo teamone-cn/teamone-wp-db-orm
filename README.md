@@ -1,5 +1,9 @@
 # Teamone WordPress Database ORM
 
+霆万平头哥开源
+
+![TeamOne](https://font.thwpmanage.com/img/teamone.jpg) 
+
 Teamone WordPress Database ORM 是霆万技术团队使用PHP开发的数据库操作组件，此组件并无任何其他依赖，开箱即用。
 
 在实际情况中，我们的应用往往需要使用连接多个不同的实例、读写分离等，在一些诸如 WordPress 的框架，其内置的 `wpdb` 数据库操作类有非常大的局限性，其无法支持切换实例、读写分离等有价值的功能特性。
