@@ -159,7 +159,7 @@ VALUES (1, 11, 'SK221', 123.12, 123.12, 1, 123.12, '2023-01-15 16:32:14'),
 - 安装 Simple Database
 
 ```sh
-$ composer require teamone/simple-database
+$ composer require teamone/teamone-wp-db-orm
 ```
 
 ## Composer 依赖工具安装
